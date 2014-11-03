@@ -176,10 +176,10 @@
           <ul>
             {block:IndexPage}
               <li>
-                <a href="#tracklist">Tracklist</a>
+                <a href="#tracklist">Contents</a>
               </li>
               <li>
-                <a href="#staff">Staff</a>
+                <a href="#staff">Members</a>
               </li>
             {/block:IndexPage}
             {block:HasPages}
@@ -278,7 +278,7 @@
             {/block:IfStore01Name}
           </tbody>
         </table>
-        {block:IfStore01Name}
+        <!-- {block:IfStore01Name}
           <div class="available">
             <h3>Available Now</h3>
             <span class="available-btn btn btn-large">購入する</span>
@@ -309,7 +309,7 @@
             {/block:IfStore02Name}
           {block:IfStore01Name}
           </div>
-        {/block:IfStore01Name}
+        {/block:IfStore01Name} -->
 
         <ul class="social-buttons">
           {block:IfEnableTweetButton}
@@ -349,7 +349,7 @@
 
     <section id="tracklist" class="section">
       <div class="content">
-        <h3>Tracklist</h3>
+        <h3>Contents</h3>
         <ol class="list">
           {block:IfTrack01Title}
             <li>
@@ -454,7 +454,7 @@
 
     <section id="staff" class="section">
       <div class="content">
-        <h3>Staff</h3>
+        <h3>Members</h3>
         <ul class="list">
           {block:IfStaff01Name}
             <li>
@@ -462,7 +462,7 @@
               <span class="title">{text:Staff01 Name}</span>
               {block:IfStaff01URL}
                 <span class="website">
-                  <a href="{text:Staff01 URL}" target="_blank">Website</a>
+                  <a href="{text:Staff01 URL}" target="_blank">Twitter</a>
                 </span>
               {/block:IfStaff01URL}
             </li>
@@ -473,7 +473,7 @@
               <span class="title">{text:Staff02 Name}</span>
               {block:IfStaff02URL}
                 <span class="website">
-                  <a href="{text:Staff02 URL}" target="_blank">Website</a>
+                  <a href="{text:Staff02 URL}" target="_blank">Twitter</a>
                 </span>
               {/block:IfStaff02URL}
             </li>
@@ -484,7 +484,7 @@
               <span class="title">{text:Staff03 Name}</span>
               {block:IfStaff03URL}
                 <span class="website">
-                  <a href="{text:Staff03 URL}" target="_blank">Website</a>
+                  <a href="{text:Staff03 URL}" target="_blank">Twitter</a>
                 </span>
               {/block:IfStaff03URL}
             </li>
@@ -495,7 +495,7 @@
               <span class="title">{text:Staff04 Name}</span>
               {block:IfStaff04URL}
                 <span class="website">
-                  <a href="{text:Staff04 URL}" target="_blank">Website</a>
+                  <a href="{text:Staff04 URL}" target="_blank">Twitter</a>
                 </span>
               {/block:IfStaff04URL}
             </li>
@@ -612,7 +612,7 @@
   <footer id="footer">
     <div class="content">
       <p>
-        ©{CopyrightYears} {Title}<br/>
+        (c) {CopyrightYears} {text:Circle Name}<br/>
         {text:Footer Text}
       </p>
       <p>
