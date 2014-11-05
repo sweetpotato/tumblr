@@ -18,11 +18,10 @@
   <meta name="select:ThemeColor" content="blue" title="Blue">
   <meta name="select:ThemeColor" content="gray" title="Smoke">
 
+  <meta name="text:Published Year" content="" />
+
   <meta name="text:Introduction" content="" />
   <meta name="text:Introduction Heading" content="Introduction" />
-  <meta name="text:Youtube Embed Code" content="" />
-  <meta name="text:Soundcloud Embed Code" content="" />
-  <meta name="text:Nicovideo Embed Code" content="" />
   <meta name="text:Footer Text" content="" />
   <meta name="text:Google Analytics ID" content="" />
 
@@ -99,13 +98,12 @@
   <meta name="if:Enable Bookmark Button" content="1"/>
   <meta name="if:Enable Plus1 Button" content="1"/>
 
-  <meta name="text:Blog Domain" content="" />
   <meta name="image:Main Image" content="//sanographix.github.io/public/tumblr/tokusetsu2/images/header-template.jpg"/>
   <meta name="image:Jacket" content=""/>
   <meta name="image:Banner1" content=""/>
   <meta name="image:Banner2" content=""/>
 
-  <title>{block:PostTitle}{PostTitle} - {/block:PostTitle}{Title}{block:IndexPage} - {text:Circle Name}{/block:IndexPage}</title>
+  <title>{Title} | 4コママンガのススメWeb</title>
   {block:TagPage}
     <meta name="robots" content="noindex,follow"/>
   {/block:TagPage}
@@ -117,21 +115,21 @@
   {/block:Description}
   <meta name="viewport" content="width=device-width">
 
-  <meta property="og:title" content="{block:PostTitle}{PostTitle} - {/block:PostTitle}{Title}{block:IndexPage} - {text:Circle Name}{/block:IndexPage}" />
+  <meta property="og:title" content="{Title} | 4コママンガのススメWeb" />
   <meta property="og:type" content="website" />
   {block:IfMainImageImage}
     <meta property="og:image" content="{image:Main Image}" />
   {/block:IfMainImageImage}
-  <meta property="og:url" content="{block:IndexPage}http://{text:Blog Domain}{/block:IndexPage}{block:PermalinkPage}{Permalink}{/block:PermalinkPage}" />
-  <meta property="og:site_name" content="{Title}" />
+  <meta property="og:url" content="http://4komasusume.tumblr.com/{text:Published Year}" />
+  <meta property="og:site_name" content="4コママンガのススメWeb" />
   {block:Description}
     <meta property="og:description" content="{MetaDescription}">
   {/block:Description}
 
   <link rel="stylesheet" href="//sanographix.github.io/public/tumblr/tokusetsu2/css/style.css" />
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,300italic' rel='stylesheet' type='text/css'>
-  <link rel="shortcut icon" href="{Favicon}">
-  <link rel="canonical" href="{block:IndexPage}http://{text:Blog Domain}{/block:IndexPage}{block:PermalinkPage}{Permalink}{/block:PermalinkPage}"/>
+  <link rel="shortcut icon" href="http://31.media.tumblr.com/avatar_417f57e1dd12_128.png">
+  <link rel="canonical" href="http://4komasusume.tumblr.com/{text:Published Year}"/>
 
   <!--[if lt IE 9]>
     <script src="//sanographix.github.io/public/tumblr/tokusetsu2/js/html5shiv.js"></script>
@@ -278,49 +276,17 @@
             {/block:IfStore01Name}
           </tbody>
         </table>
-        <!-- {block:IfStore01Name}
-          <div class="available">
-            <h3>Available Now</h3>
-            <span class="available-btn btn btn-large">購入する</span>
-            {/block:IfStore01Name}
-            {block:IfStore02Name}
-              <div class="available-dropdown">
-                <ul>
-                  <li>
-                    <a href="{text:Store01 URL}" target="_blank">{text:Store01 Name}</a>
-                  </li>
-                  <li>
-                    <a href="{text:Store02 URL}" target="_blank">{text:Store02 Name}</a>
-                  </li>
-                  {/block:IfStore02Name}
-                  {block:IfStore03Name}
-                    <li>
-                      <a href="{text:Store03 URL}" target="_blank">{text:Store03 Name}</a>
-                    </li>
-                  {/block:IfStore03Name}
-                  {block:IfStore04Name}
-                    <li>
-                      <a href="{text:Store04 URL}" target="_blank">{text:Store04 Name}</a>
-                    </li>
-                  {/block:IfStore04Name}
-                  {block:IfStore02Name}
-                </ul>
-              </div>
-            {/block:IfStore02Name}
-          {block:IfStore01Name}
-          </div>
-        {/block:IfStore01Name} -->
 
         <ul class="social-buttons">
           {block:IfEnableTweetButton}
           <li class="social-button">
-            <a href="https://twitter.com/share" class="twitter-share-button" data-url="{BlogURL}">Tweet</a>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://4komasusume.tumblr.com/{text:Published Year}">Tweet</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
           </li>
           {/block:IfEnableTweetButton}
           {block:IfEnableFacebookButton}
           <li class="social-button">
-            <div class="fb-like" data-url="{BlogURL}" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
+            <div class="fb-like" data-url="http://4komasusume.tumblr.com/{text:Published Year}" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
           </li>
           {/block:IfEnableFacebookButton}
           {block:IfEnableBookmarkButton}
